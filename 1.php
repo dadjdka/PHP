@@ -2,7 +2,7 @@
 
 use App\User;
 
-include "User.php"
+include "User.php";
 
 echo User::make();
 
