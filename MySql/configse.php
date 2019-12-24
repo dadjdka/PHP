@@ -25,7 +25,7 @@ try {
 
 $query = $pdo->prepare("INSERT INTO news (title,author) VALUES(:title,:author)");
 
-
+// 预处理
 $query->execute([':id' => 1]);  
   
 } catch (PDOExecption $th) {
