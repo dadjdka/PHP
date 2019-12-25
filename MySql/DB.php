@@ -2,7 +2,7 @@
 
 namespace Databases;
 
-use DB as D;
+//use DB as D;
 
 class DB{
     protected $link;
