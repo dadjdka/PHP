@@ -2,6 +2,11 @@
 
 namespace Databases;
 
+<<<<<<< HEAD
+=======
+//use DB as D;
+
+>>>>>>> e30171dd6a5644ec96fe9f6d8c47989ba1c84d95
 class DB{
     protected $link;
     protected $options = [
