@@ -2,8 +2,11 @@
 
 namespace Databases;
 
-use DB as D;
+<<<<<<< HEAD
+=======
+//use DB as D;
 
+>>>>>>> e30171dd6a5644ec96fe9f6d8c47989ba1c84d95
 class DB{
     protected $link;
     protected $options = [
@@ -91,21 +94,21 @@ class DB{
         return $this->execute($sql,array_values($vars));
     }
 
-    public function update(arrar $vars){
+    public function update(array $vars){
 
         if (empty($this->options['where'])) {
             throw new Exception("条件不能为空", 1);
             
         }
 
-        $sql = "UPDATE {$this->options['table']} SET".\implode('=?,',array_keys($vars).
-        "=?{$this->options['where']}");
+        $sql = "UPDATE {$this->options['table']} SET".\implode('=?,',array_keys($vars)."=?{$this->options['where']}");
+        // $sql = "UPDATE {$this->options['table']} SET".\implode('=?,',array_keys($vars)."=?{$this->options['where']}");
 
         return $this->execute($sql,array_values($vars));
     }
 
 
-    public function delete(arrar $vars){
+    public function delete(array $vars){
 
         if (empty($this->options['where'])) {
             throw new Exception("条件不能为空", 1);
